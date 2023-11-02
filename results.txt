@@ -1,0 +1,735 @@
+
+R version 4.3.1 (2023-06-16) -- "Beagle Scouts"
+Copyright (C) 2023 The R Foundation for Statistical Computing
+Platform: aarch64-apple-darwin23.0.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+print("Wariant 1")
+
+print("task a")
+a <- 2 * exp(5)
+b <- 2 * a
+a
+b
+which.max(c(a, b))
+> print("Wariant 1")
+[1] "Wariant 1"
+> 
+> print("task a")
+[1] "task a"
+a <- 2 * exp(5)
+b <- 2 * a
+a
+b
+which.max(c(a, b))
+
+print("task b")
+?sum
+> a <- 2 * exp(5)
+b <- 2 * a
+a
+b
+which.max(c(a, b))
+
+print("task b")
+?sum
+
+> b <- 2 * a
+> a
+[1] 296.8263
+> b
+[1] 593.6526
+> which.max(c(a, b))
+[1] 2
+> 
+> print("task b")
+[1] "task b"
+?sum
+
+print("task c")
+> ?sum
+> 
+> print("task c")
+[1] "task c"
+> a <- seq(15, 25)
+> a
+ [1] 15 16 17 18 19 20 21 22 23 24 25
+> a_sum <- sum(a)
+> a_sum
+[1] 220
+> 
+> print("task d")
+[1] "task d"
+matching_functions <- apropos("sum", mode = "funct> matching_functions <- apropos("sum", mode = "function")
+matching_functions
+> matching_functions
+ [1] ".colSums"                ".rowSums"               
+ [3] ".tryResumeInterrupt"     "colSums"                
+ [5] "contr.sum"               "cumsum"                 
+ [7] "format.summaryDefault"   "marginSums"             
+ [9] "print.summary.table"     "print.summary.warnings" 
+[11] "print.summaryDefault"    "rowsum"                 
+[13] "rowsum.data.frame"       "rowsum.default"         
+[15] "rowSums"                 "sum"                    
+[17] "summary"                 "Summary"                
+[19] "summary.aov"             "summary.connection"     
+[21] "summary.data.frame"      "Summary.data.frame"     
+[23] "summary.Date"            "Summary.Date"           
+[25] "summary.default"         "Summary.difftime"       
+[27] "summary.factor"          "Summary.factor"         
+[29] "summary.glm"             "summary.lm"             
+[31] "summary.manova"          "summary.matrix"         
+[33] "Summary.numeric_version" "Summary.ordered"        
+[35] "summary.POSIXct"         "Summary.POSIXct"        
+[37] "summary.POSIXlt"         "Summary.POSIXlt"        
+[39] "summary.proc_time"       "summary.srcfile"        
+[41] "summary.srcref"          "summary.stepfun"        
+[43] "summary.table"           "summary.warnings"       
+[45] "summaryRprof"           
+> 
+> print("task e")
+[1] "task e"
+> setwd("/Users/tsteblik/APU/zadanie_1")
+> s <- "smartfony Samsung"
+> s
+[1] "smartfony Samsung"
+> saveRDS(s, file = "s.rds")
+> rm(s)
+> s
+Error: object 's' not found
+> s <- readRDS("s.rds")
+> s
+[1] "smartfony Samsung"
+> 
+> print("task f")
+[1] "task f"
+> #install.packages("gridExtra")
+> library(gridExtra)
+?grid.table()
+data(mtcars)
+t <- grid.table(mtcars[1:10, ])
+> ?grid.table()
+data(mtcars)
+t <- grid.table(mtcars[1:10, ])
+grid.draw(t)
+
+> data(mtcars)
+t <- grid.table(mtcars[1:10, ])
+grid.draw(t)
+
+print("task g")
+> t <- grid.table(mtcars[1:10, ])
+grid.draw(t)
+
+print("task g")
+g <- seq(100, 20, -4)
+g
+
+print("task h")
+a <- seq(9, 5)
+a
+b <- seq(11, 16)
+b
+d <- c(a, b)
+d
+
+print("task i")
+nazwa <- c("SAMSUNG GALAXY A2 CORE", "SAMSUNG GALAXY A6",
+           "SAMSUNG GALAXY A7 2018", "SAMSUNG GALAXY A8S",
+           "SAMSUNG GALAXY A9", "SAMSUNG GALAXY M10",
+           "SAMSUNG GALAXY WIDE 3", "SAMSUNG GALAXY M20",
+           "SAMSUNG GALAXY NOTE 9", "SAMSUNG GALAXY ON6")
+wyswietlacz <- c(4.98, 5.6, 6.00, 6.39, 6.30, 6.22, 5.50, 6.30, 6.40, 5.60)
+pamiec_RAM <- c(1, 4, 4, 6, 6, 2, 2, 3, 6, 3)
+pamiec_wbudowana <- c(8, 32, 64, 128, 128, 16, 32, 32, 128, 32)
+aparat_foto <- c(5, 16, 24, 24, 24, 13, 13, 13, 12, 13)
+cena <- c(2699, 1999, 1899, 545, 1899, 2699, 929, 1799, 4999, 2148)
+liczba_opini <- c(1, 39, 80, 0, 24, 0, 0, 3, 36, 0)
+smartfony <- data.frame(nazwa, wyswietlacz, pamiec_RAM, pamiec_wbudowana,
+                        aparat_foto, cena, liczba_opini)
+mean(smartfony$cena)
+> grid.draw(t)
+Error in grid.draw(t) : could not find function "grid.draw"
+
+print("task g")
+g <- seq(100, 20, -4)
+g
+
+print("task h")
+a <- seq(9, 5)
+a
+b <- seq(11, 16)
+b
+d <- c(a, b)
+d
+
+print("task i")
+nazwa <- c("SAMSUNG GALAXY A2 CORE", "SAMSUNG GALAXY A6",
+           "SAMSUNG GALAXY A7 2018", "SAMSUNG GALAXY A8S",
+           "SAMSUNG GALAXY A9", "SAMSUNG GALAXY M10",
+           "SAMSUNG GALAXY WIDE 3", "SAMSUNG GALAXY M20",
+           "SAMSUNG GALAXY NOTE 9", "SAMSUNG GALAXY ON6")
+wyswietlacz <- c(4.98, 5.6, 6.00, 6.39, 6.30, 6.22, 5.50, 6.30, 6.40, 5.60)
+pamiec_RAM <- c(1, 4, 4, 6, 6, 2, 2, 3, 6, 3)
+pamiec_wbudowana <- c(8, 32, 64, 128, 128, 16, 32, 32, 128, 32)
+aparat_foto <- c(5, 16, 24, 24, 24, 13, 13, 13, 12, 13)
+cena <- c(2699, 1999, 1899, 545, 1899, 2699, 929, 1799, 4999, 2148)
+liczba_opini <- c(1, 39, 80, 0, 24, 0, 0, 3, 36, 0)
+smartfony <- data.frame(nazwa, wyswietlacz, pamiec_RAM, pamiec_wbudowana,
+                        aparat_foto, cena, liczba_opini)
+mean(smartfony$cena)
+> 
+> print("task g")
+g <- seq(100, 20, -4)
+g
+
+print("task h")
+a <- seq(9, 5)
+a
+b <- seq(11, 16)
+b
+d <- c(a, b)
+d
+
+print("task i")
+nazwa <- c("SAMSUNG GALAXY A2 CORE", "SAMSUNG GALAXY A6",
+           "SAMSUNG GALAXY A7 2018", "SAMSUNG GALAXY A8S",
+           "SAMSUNG GALAXY A9", "SAMSUNG GALAXY M10",
+           "SAMSUNG GALAXY WIDE 3", "SAMSUNG GALAXY M20",
+           "SAMSUNG GALAXY NOTE 9", "SAMSUNG GALAXY ON6")
+wyswietlacz <- c(4.98, 5.6, 6.00, 6.39, 6.30, 6.22, 5.50, 6.30, 6.40, 5.60)
+pamiec_RAM <- c(1, 4, 4, 6, 6, 2, 2, 3, 6, 3)
+pamiec_wbudowana <- c(8, 32, 64, 128, 128, 16, 32, 32, 128, 32)
+aparat_foto <- c(5, 16, 24, 24, 24, 13, 13, 13, 12, 13)
+cena <- c(2699, 1999, 1899, 545, 1899, 2699, 929, 1799, 4999, 2148)
+liczba_opini <- c(1, 39, 80, 0, 24, 0, 0, 3, 36, 0)
+smartfony <- data.frame(nazwa, wyswietlacz, pamiec_RAM, pamiec_wbudowana,
+                        aparat_foto, cena, liczba_opini)
+mean(smartfony$cena)
+
+print("task j")
+do_dodania <- c("SAMSUNG GALAXY S9+", 6.20, 6, 64, 12, 1706, 60)
+sms[1] "task g"
+> g <- seq(100, 20, -4)
+> g
+
+print("task h")
+a <- seq(9, 5)
+a
+b <- seq(11, 16)
+b
+d <- c(a, b)
+d
+
+print("task i")
+nazwa <- c("SAMSUNG GALAXY A2 CORE", "SAMSUNG GALAXY A6",
+           "SAMSUNG GALAXY A7 2018", "SAMSUNG GALAXY A8S",
+           "SAMSUNG GALAXY A9", "SAMSUNG GALAXY M10",
+           "SAMSUNG GALAXY WIDE 3", "SAMSUNG GALAXY M20",
+           "SAMSUNG GALAXY NOTE 9", "SAMSUNG GALAXY ON6")
+wyswietlacz <- c(4.98, 5.6, 6.00, 6.39, 6.30, 6.22, 5.50, 6.30, 6.40, 5.60)
+pamiec_RAM <- c(1, 4, 4, 6, 6, 2, 2, 3, 6, 3)
+pamiec_wbudowana <- c(8, 32, 64, 128, 128, 16, 32, 32, 128, 32)
+aparat_foto <- c(5, 16, 24, 24, 24, 13, 13, 13, 12, 13)
+cena <- c(2699, 1999, 1899, 545, 1899, 2699, 929, 1799, 4999, 2148)
+liczba_opini <- c(1, 39, 80, 0, 24, 0, 0, 3, 36, 0)
+smartfony <- data.frame(nazwa, wyswietlacz, pamiec_RAM, pamiec_wbudowana,
+                        aparat_foto, cena, liczba_opini)
+mean(smartfony$cena)
+
+print("task j")
+do_dodania <- c("SAMSUNG GALAXY S9+", 6.20, 6, 64, 12, 1706, 60)
+smsmsmsmsmsmsrbind(smartfony, [1] 100  96  92  88  84  80  76  72  68  64  60  56  52  48  44  40  36  32  28
+[20]  24  20
+> 
+print("task h")
+a <- seq(9, 5)
+a
+b <- seq(11, 16)
+b
+d <- c(a, b)
+d
+
+print("task i")
+nazwa <- c("SAMSUNG GALAXY A2 CORE", "SAMSUNG GALAXY A6",
+           "SAMSUNG GALAXY A7 2018", "SAMSUNG GALAXY A8S",
+           "SAMSUNG GALAXY A9", "SAMSUNG GALAXY M10",
+           "SAMSUNG GALAXY WIDE 3", "SAMSUNG GALAXY M20",
+           "SAMSUNG GALAXY NOTE 9", "SAMSUNG GALAXY ON6")
+wyswietlacz <- c(4.98, 5.6, 6.00, 6.39, 6.30, 6.22, 5.50, 6.30, 6.40, 5.60)
+pamiec_RAM <- c(1, 4, 4, 6, 6, 2, 2, 3, 6, 3)
+pamiec_wbudowana <- c(8, 32, 64, 128, 128, 16, 32, 32, 128, 32)
+aparat_foto <- c(5, 16, 24, 24, 24, 13, 13, 13, 12, 13)
+cena <- c(2699, 1999, 1899, 545, 1899, 2699, 929, 1799, 4999, 2148)
+liczba_opini <- c(1, 39, 80, 0, 24, 0, 0, 3, 36, 0)
+smartfony <- data.frame(nazwa, wyswietlacz, pamiec_RAM, pamiec_wbudowana,
+                        aparat_foto, cena, liczba_opini)
+mean(smartfony$cena)
+
+print("task j")
+do_dodania <- c("SAMSUNG GALAXY S9+", 6.20, 6, 64, 12, 1706, 60)
+smsmsmsmsmsmsrbind(smartfony> print("task h")
+a <- seq(9, 5)
+a
+b <- seq(11, 16)
+b
+d <- c(a, b)
+d
+
+print("task i")
+nazwa <- c("SAMSUNG GALAXY A2 CORE", "SAMSUNG GALAXY A6",
+           "SAMSUNG GALAXY A7 2018", "SAMSUNG GALAXY A8S",
+           "SAMSUNG GALAXY A9", "SAMSUNG GALAXY M10",
+           "SAMSUNG GALAXY WIDE 3", "SAMSUNG GALAXY M20",
+           "SAMSUNG GALAXY NOTE 9", "SAMSUNG GALAXY ON6")
+wyswietlacz <- c(4.98, 5.6, 6.00, 6.39, 6.30, 6.22, 5.50, 6.30, 6.40, 5.60)
+pamiec_RAM <- c(1, 4, 4, 6, 6, 2, 2, 3, 6, 3)
+pamiec_wbudowana <- c(8, 32, 64, 128, 128, 16, 32, 32, 128, 32)
+aparat_foto <- c(5, 16, 24, 24, 24, 13, 13, 13, 12, 13)
+cena <- c(2699, 1999, 1899, 545, 1899, 2699, 929, 1799, 4999, 2148)
+liczba_opini <- c(1, 39, 80, 0, 24, 0, 0, 3, 36, 0)
+smartfony <- data.frame(nazwa, wyswietlacz, pamiec_RAM, pamiec_wbudowana,
+                        aparat_foto, cena, liczba_opini)
+mean(smartfony$cena)
+
+print("task j")
+do_dodania <- c("SAMSUNG GALAXY S9+", 6.20, 6, 64, 12, 1706, 60)
+smsmsmsmsmsmsrbind(smartfony, do_dodania)
+smart[1] "task h"
+> a <- seq(9, 5)
+a
+b <- seq(11, 16)
+b
+d <- c(a, b)
+d
+
+print("task i")
+nazwa <- c("SAMSUNG GALAXY A2 CORE", "SAMSUNG GALAXY A6",
+           "SAMSUNG GALAXY A7 2018", "SAMSUNG GALAXY A8S",
+           "SAMSUNG GALAXY A9", "SAMSUNG GALAXY M10",
+           "SAMSUNG GALAXY WIDE 3", "SAMSUNG GALAXY M20",
+           "SAMSUNG GALAXY NOTE 9", "SAMSUNG GALAXY ON6")
+wyswietlacz <- c(4.98, 5.6, 6.00, 6.39, 6.30, 6.22, 5.50, 6.30, 6.40, 5.60)
+pamiec_RAM <- c(1, 4, 4, 6, 6, 2, 2, 3, 6, 3)
+pamiec_wbudowana <- c(8, 32, 64, 128, 128, 16, 32, 32, 128, 32)
+aparat_foto <- c(5, 16, 24, 24, 24, 13, 13, 13, 12, 13)
+cena <- c(2699, 1999, 1899, 545, 1899, 2699, 929, 1799, 4999, 2148)
+liczba_opini <- c(1, 39, 80, 0, 24, 0, 0, 3, 36, 0)
+smartfony <- data.frame(nazwa, wyswietlacz, pamiec_RAM, pamiec_wbudowana,
+                        aparat_foto, cena, liczba_opini)
+mean(smartfony$cena)
+
+print("task j")
+do_dodania <- c("SAMSUNG GALAXY S9+", 6.20, 6, 64, 12, 1706, 60)
+smsmsmsmsmsmsrbind(smartfony, do_dodania)
+smartfony$cena smartf> a
+[1] 9 8 7 6 5
+b <- seq(11, 16)
+b
+d <- c(a, b)
+d
+
+print("task i")
+nazwa <- c("SAMSUNG GALAXY A2 CORE", "SAMSUNG GALAXY A6",
+           "SAMSUNG GALAXY A7 2018", "SAMSUNG GALAXY A8S",
+           "SAMSUNG GALAXY A9", "SAMSUNG GALAXY M10",
+           "SAMSUNG GALAXY WIDE 3", "SAMSUNG GALAXY M20",
+           "SAMSUNG GALAXY NOTE 9", "SAMSUNG GALAXY ON6")
+wyswietlacz <- c(4.98, 5.6, 6.00, 6.39, 6.30, 6.22, 5.50, 6.30, 6.40, 5.60)
+pamiec_RAM <- c(1, 4, 4, 6, 6, 2, 2, 3, 6, 3)
+pamiec_wbudowana <- c(8, 32, 64, 128, 128, 16, 32, 32, 128, 32)
+aparat_foto <- c(5, 16, 24, 24, 24, 13, 13, 13, 12, 13)
+cena <- c(2699, 1999, 1899, 545, 1899, 2699, 929, 1799, 4999, 2148)
+liczba_opini <- c(1, 39, 80, 0, 24, 0, 0, 3, 36, 0)
+smartfony <- data.frame(nazwa, wyswietlacz, pamiec_RAM, pamiec_wbudowana,
+                        aparat_foto, cena, liczba_opini)
+mean(smartfony$cena)
+
+print("task j")
+do_dodania <- c("SAMSUNG GALAXY S9+", 6.20, 6, 64, 12, 1706, 60)
+smsmsmsmsmsmsrbind(smartfony, do_dodania)
+smartfony> b <- seq(11, 16)
+b
+d <- c(a, b)
+d
+
+print("task i")
+nazwa <- c("SAMSUNG GALAXY A2 CORE", "SAMSUNG GALAXY A6",
+           "SAMSUNG GALAXY A7 2018", "SAMSUNG GALAXY A8S",
+           "SAMSUNG GALAXY A9", "SAMSUNG GALAXY M10",
+           "SAMSUNG GALAXY WIDE 3", "SAMSUNG GALAXY M20",
+           "SAMSUNG GALAXY NOTE 9", "SAMSUNG GALAXY ON6")
+wyswietlacz <- c(4.98, 5.6, 6.00, 6.39, 6.30, 6.22, 5.50, 6.30, 6.40, 5.60)
+pamiec_RAM <- c(1, 4, 4, 6, 6, 2, 2, 3, 6, 3)
+pamiec_wbudowana <- c(8, 32, 64, 128, 128, 16, 32, 32, 128, 32)
+aparat_foto <- c(5, 16, 24, 24, 24, 13, 13, 13, 12, 13)
+cena <- c(2699, 1999, 1899, 545, 1899, 2699, 929, 1799, 4999, 2148)
+liczba_opini <- c(1, 39, 80, 0, 24, 0, 0, 3, 36, 0)
+smartfony <- data.frame(nazwa, wyswietlacz, pamiec_RAM, pamiec_wbudowana,
+                        aparat_foto, cena, liczba_opini)
+mean(smartfony$cena)
+
+print("task j")
+do_dodania <- c("SAMSUNG GALAXY S9+", 6.20, 6, 64, 12, 1706, 60)
+smsmsmsmsmsmsrbind(smartfony, do_dodania)
+smartfony$cena smartfony$cenasmsmartfony$c> b
+[1] 11 12 13 14 15 16
+d <- c(a, b)
+d
+
+print("task i")
+nazwa <- c("SAMSUNG GALAXY A2 CORE", "SAMSUNG GALAXY A6",
+           "SAMSUNG GALAXY A7 2018", "SAMSUNG GALAXY A8S",
+           "SAMSUNG GALAXY A9", "SAMSUNG GALAXY M10",
+           "SAMSUNG GALAXY WIDE 3", "SAMSUNG GALAXY M20",
+           "SAMSUNG GALAXY NOTE 9", "SAMSUNG GALAXY ON6")
+wyswietlacz <- c(4.98, 5.6, 6.00, 6.39, 6.30, 6.22, 5.50, 6.30, 6.40, 5.60)
+pamiec_RAM <- c(1, 4, 4, 6, 6, 2, 2, 3, 6, 3)
+pamiec_wbudowana <- c(8, 32, 64, 128, 128, 16, 32, 32, 128, 32)
+aparat_foto <- c(5, 16, 24, 24, 24, 13, 13, 13, 12, 13)
+cena <- c(2699, 1999, 1899, 545, 1899, 2699, 929, 1799, 4999, 2148)
+liczba_opini <- c(1, 39, 80, 0, 24, 0, 0, 3, 36, 0)
+smartfony <- data.frame(nazwa, wyswietlacz, pamiec_RAM, pamiec_wbudowana,
+                        aparat_foto, cena, liczba_opini)
+mean(smartfony$cena)
+
+print("task j")
+do_dodania <- c("SAMSUNG GALAXY S9+", 6.20, 6, 64, 12, 1706, 60)
+smsmsmsmsmsmsrbind(smartfony, do_dodania)
+smartfony$cena smartfo> d <- c(a, b)
+d
+
+print("task i")
+nazwa <- c("SAMSUNG GALAXY A2 CORE", "SAMSUNG GALAXY A6",
+           "SAMSUNG GALAXY A7 2018", "SAMSUNG GALAXY A8S",
+           "SAMSUNG GALAXY A9", "SAMSUNG GALAXY M10",
+           "SAMSUNG GALAXY WIDE 3", "SAMSUNG GALAXY M20",
+           "SAMSUNG GALAXY NOTE 9", "SAMSUNG GALAXY ON6")
+wyswietlacz <- c(4.98, 5.6, 6.00, 6.39, 6.30, 6.22, 5.50, 6.30, 6.40, 5.60)
+pamiec_RAM <- c(1, 4, 4, 6, 6, 2, 2, 3, 6, 3)
+pamiec_wbudowana <- c(8, 32, 64, 128, 128, 16, 32, 32, 128, 32)
+aparat_foto <- c(5, 16, 24, 24, 24, 13, 13, 13, 12, 13)
+cena <- c(2699, 1999, 1899, 545, 1899, 2699, 929, 1799, 4999, 2148)
+liczba_opini <- c(1, 39, 80, 0, 24, 0, 0, 3, 36, 0)
+smartfony <- data.frame(nazwa, wyswietlacz, pamiec_RAM, pamiec_wbudowana,
+                        aparat_foto, cena, liczba_opini)
+mean(smartfony$cena)
+
+print("task j")
+do_dodania <- c("SAMSUNG GALAXY S9+", 6.20, 6, 64, 12, 1706, 60)
+smsmsmsmsmsmsrbind(smartfony, do_dodania)
+smartfony$cena smartfony$cenasmsmartfony$cen
+mean(smartfon> d
+ [1]
+print("task i")
+nazwa <- c("SAMSUNG GALAXY A2 CORE", "SAMSUNG GALAXY A6",
+           "SAMSUNG GALAXY A7 2018", "SAMSUNG GALAXY A8S",
+           "SAMSUNG GALAXY A9", "SAMSUNG GALAXY M10",
+           "SAMSUNG GALAXY WIDE 3", "SAMSUNG GALAXY M20",
+           "SAMSUNG GALAXY NOTE 9", "SAMSUNG GALAXY ON6")
+wyswietlacz <- c(4.98, 5.6, 6.00, 6.39, 6.30, 6.22, 5.50, 6.30, 6.40, 5.60)
+pamiec_RAM <- c(1, 4, 4, 6, 6, 2, 2, 3, 6, 3)
+pamiec_wbudowana <- c(8, 32, 64, 128, 128, 16, 32, 32, 128, 32)
+aparat_foto <- c(5, 16, 24, 24, 24, 13, 13, 13, 12, 13)
+cena <- c(2699, 1999, 1899, 545, 1899, 2699, 929, 1799, 4999, 2148)
+liczba_opini <- c(1, 39, 80, 0, 24, 0, 0, 3, 36, 0)
+smartfony <- data.frame(nazwa, wyswietlacz, pamiec_RAM, pamiec_wbudowana,
+                        aparat_foto, cena, liczba_opini)
+mean(smartfony$cena)
+
+print("task j")
+do_dodania <- c("SAMSUNG GALAXY S9+", 6.20, 6, 64, 12, 1706, 60)
+smsmsmsmsmsmsrbind(smartfony, do_dodania)
+smartfony$cena smartfony$cenasmsmartfony$cen
+mean(smartfo  9  8  7  6  5 11 12 13 14 15 16
+> 
+print("task i")
+nazwa <- c("SAMSUNG GALAXY A2 CORE", "SAMSUNG GALAXY A6",
+           "SAMSUNG GALAXY A7 2018", "SAMSUNG GALAXY A8S",
+           "SAMSUNG GALAXY A9", "SAMSUNG GALAXY M10",
+           "SAMSUNG GALAXY WIDE 3", "SAMSUNG GALAXY M20",
+           "SAMSUNG GALAXY NOTE 9", "SAMSUNG GALAXY ON6")
+wyswietlacz <- c(4.98, 5.6, 6.00, 6.39, 6.30, 6.22, 5.50, 6.30, 6.40, 5.60)
+pamiec_RAM <- c(1, 4, 4, 6, 6, 2, 2, 3, 6, 3)
+pamiec_wbudowana <- c(8, 32, 64, 128, 128, 16, 32, 32, 128, 32)
+aparat_foto <- c(5, 16, 24, 24, 24, 13, 13, 13, 12, 13)
+cena <- c(2699, 1999, 1899, 545, 1899, 2699, 929, 1799, 4999, 2148)
+liczba_opini <- c(1, 39, 80, 0, 24, 0, 0, 3, 36, 0)
+smartfony <- data.frame(nazwa, wyswietlacz, pamiec_RAM, pamiec_wbudowana,
+                        aparat_foto, cena, liczba_opini)
+mean(smartfony$cena)
+
+print("task j")
+do_dodania <- c("SAMSUNG GALAXY S9+", 6.20, 6, 64, 12, 1706, 60)
+smsmsmsmsmsmsrbind(smartfony, do_dodania)
+smartfony$cena smartfony$cenasmsmartfony$cen
+mean(smartfony$> print("task i")
+nazwa <- c("SAMSUNG GALAXY A2 CORE", "SAMSUNG GALAXY A6",
+           "SAMSUNG GALAXY A7 2018", "SAMSUNG GALAXY A8S",
+           "SAMSUNG GALAXY A9", "SAMSUNG GALAXY M10",
+           "SAMSUNG GALAXY WIDE 3", "SAMSUNG GALAXY M20",
+           "SAMSUNG GALAXY NOTE 9", "SAMSUNG GALAXY ON6")
+wyswietlacz <- c(4.98, 5.6, 6.00, 6.39, 6.30, 6.22, 5.50, 6.30, 6.40, 5.60)
+pamiec_RAM <- c(1, 4, 4, 6, 6, 2, 2, 3, 6, 3)
+pamiec_wbudowana <- c(8, 32, 64, 128, 128, 16, 32, 32, 128, 32)
+aparat_foto <- c(5, 16, 24, 24, 24, 13, 13, 13, 12, 13)
+cena <- c(2699, 1999, 1899, 545, 1899, 2699, 929, 1799, 4999, 2148)
+liczba_opini <- c(1, 39, 80, 0, 24, 0, 0, 3, 36, 0)
+smartfony <- data.frame(nazwa, wyswietlacz, pamiec_RAM, pamiec_wbudowana,
+                        aparat_foto, cena, liczba_opini)
+mean(smartfony$cena)
+
+print("task j")
+do_dodania <- c("SAMSUNG GALAXY S9+", 6.20, 6, 64, 12, 1706, 60)
+smsmsmsmsmsmsrbind(smartfony, do_dodania)
+smartfony$cena smartfony$cenasmsmartfony$cen
+mean(smartfony$cena)
+
+print("task[1] "task i"
+> nazwa <- c("SAMSUNG GALAXY A2 CORE", "SAMSUNG GALAXY A6",
++            "SAMSUNG GALAXY A7 2018", "SAMSUNG GALAXY A8S",
+           "SAMSUNG GALAXY A9", "SAMSUNG GALAXY M10",
+           "SAMSUNG GALAXY WIDE 3", "SAMSUNG GALAXY M20",
+           "SAMSUNG GALAXY NOTE 9", "SAMSUNG GALAXY ON6")
+wyswietlacz <- c(4.98, 5.6, 6.00, 6.39, 6.30, 6.22, 5.50, 6.30, 6.40, 5.60)
+pamiec_RAM <- c(1, 4, 4, 6, 6, 2, 2, 3, 6, 3)
+pamiec_wbudowana <- c(8, 32, 64, 128, 128, 16, 32, 32, 128, 32)
+aparat_foto <- c(5, 16, 24, 24, 24, 13, 13, 13, 12, 13)
+cena <- c(2699, 1999, 1899, 545, 1899, 2699, 929, 1799, 4999, 2148)
+liczba_opini <- c(1, 39, 80, 0, 24, 0, 0, 3, 36, 0)
+smartfony <- data.frame(nazwa, wyswietlacz, pamiec_RAM, pamiec_wbudowana,
+                        aparat_foto, cena, liczba_opini)
+mean(smartfony$cena)
+
+print("task j")
+do_dodania <- c("SAMSUNG GALAXY S9+", 6.20, 6, 64, 12, 1706, 60)
+smsmsmsmsmsmsrbind(smartfony, do_dodania)
+smartfony$cena smartfony$cenasmsmartfony$cen
+mean(smartfony$cena)
+
+print("task k")
+printfony$ocena <- as.factor(c(2.5, 3, 4, 3.5, 3.5, 3, 2.5, 3.5, 4, 2.5, 3printfony$ocena <- as.factor(c(2.5, 3, +            "SAMSUNG GALAXY A9", "SAMSUNG GALAXY M10",
++            "SAMSUNG GALAXY WIDE 3", "SAMSUNG GALAXY M20",
++            "SAMSUNG GALAXY NOTE 9", "SAMSUNG GALAXY ON6")
+> wyswietlacz <- c(4.98, 5.6, 6.00, 6.39, 6.30, 6.22, 5.50, 6.30, 6.40, 5.60)
+> pamiec_RAM <- c(1, 4, 4, 6, 6, 2, 2, 3, 6, 3)
+> pamiec_wbudowana <- c(8, 32, 64, 128, 128, 16, 32, 32, 128, 32)
+> aparat_foto <- c(5, 16, 24, 24, 24, 13, 13, 13, 12, 13)
+> cena <- c(2699, 1999, 1899, 545, 1899, 2699, 929, 1799, 4999, 2148)
+> liczba_opini <- c(1, 39, 80, 0, 24, 0, 0, 3, 36, 0)
+> smartfony <- data.frame(nazwa, wyswietlacz, pamiec_RAM, pamiec_wbudowana,
++                         aparat_foto, cena, liczba_opini)
+> mean(smartfony$cena)
+[1] 2161.5
+> 
+> print("task j")
+[1] "task j"
+> do_dodania <- c("SAMSUNG GALAXY S9+", 6.20, 6, 64, 12, 1706, 60)
+> smsmsmsmsmsmsrbind(smartfony, do_dodania)
+Error in smsmsmsmsmsmsrbind(smartfony, do_dodania) : 
+  could not find function "smsmsmsmsmsmsrbind"
+> smartfony$cena smartfony$cenasmsmartfony$cen
+Error: unexpected symbol in "smartfony$cena smartfony"
+> mean(smartfony$cena)
+[1] 2161.5
+> 
+> print("task k")
+[1] "task k"
+> printfony$ocena <- as.factor(c(2.5, 3, 4, 3.5, 3.5, 3, 2.5, 3.5, 4, 2.5, 3printfony$ocena <- as.factor(c(2.5, 3, 4, 3.5, 3.5, martfony$ocena, mean)
+Error: unexpected symbol in "printfony$ocena <- as.factor(c(2.5, 3, 4, 3.5, 3.5, 3, 2.5, 3.5, 4, 2.5, 3printfony"
+> 
+> print("task l")
+[1] "task l"
+smartfony <- rbind(smartfony, c("SAMSUNG GALAXY J6", 5.60, 3, 32, 13, 2148, 32, 3.0))
+smartfony <- rbind(smartfony, c("SAMSUNG GALAXY S LIGHT LUXURY", 5.80, 4, 64, 16, 2120, 0, 3.0))
+smartfony <- rbind(smartfony, c("SAMSUNG GALAXY J7> smartfony <- rbind(smartfony, c("SAMSUNG GALAXY J6", 5.60, 3, 32, 13, 2148, 32, 3.0))
+Warning message:
+In rbind(deparse.level, ...) :
+  number of columns of result, 7, is not a multiple of vector length 8 of arg 2
+smartfony <- rbind(smartfony, c("SAMSUNG GALAXY S LIGHT LUXURY", 5.80, 4, 64, 16, 2120, 0, 3.0))
+smartfony <- rbind(smartfony, c("SAMSUNG GALAXY J7 REFINE", 5.50, 2, 32, 13, 1300, 0, 2.5))
+> smartfony <- rbind(smartfony, c("SAMSUNG GALAXY S LIGHT LUXURY", 5.80, 4, 64, 16, 2120, 0, 3.0))
+Warning message:
+In rbind(deparse.level, ...) :
+  number of columns of result, 7, is not a multiple of vector length 8 of arg 2
+> smartfony <- rbind(smartfony, c("SAMSUNG GALAXY J7 REFINE", 5.50, 2, 32, 13, 1300, 0, 2.5))
+Warning message:
+In rbind(deparse.level, ...) :
+  number of columns of result, 7, is not a multiple of vector length 8 of arg 2
+> smartfony <- rbind(smartfony, c("SAMSUNG GALAXY J8", 6.00, 4, 64, 16, 2148, 0, 3.0))
+Warning message:
+In rbind(deparse.level, ...) :
+  number of columns of result, 7, is not a multiple of vector length 8 of arg 2
+> licznosc_ocen <- table(smartfony$ocena)
+barplot(licznosc_ocen, main = "Liczność reprezentantów ocen klientów", xlab = "Ocena", ylab = "Liczność")
+
+print("task m")
+procentowy_udzial <- prop.table(table(smartfony$ocena)) * 100
+pie(procentowy_udzial)
+#install.packages("plotrix")
+library(plotrix)
+fan.plot(procentowy_udzial, labels = names(procentowy_udzial))
+
+print("task n")
+smartfony$liczba_opini <- as.numeric(smartfony$liczba_opini)
+> barplot(licznosc_ocen, main = "Liczność reprezentantów ocen klientów", xlab = "Ocena", ylab = "Liczność")
+Error in plot.window(xlim, ylim, log = log, ...) : 
+  need finite 'xlim' values
+In addition: Warning messages:
+1: In min(w.l) : no non-missing arguments to min; returning Inf
+2: In max(w.r) : no non-missing arguments to max; returning -Inf
+3: In min(x) : no non-missing arguments to min; returning Inf
+4: In max(x) : no non-missing arguments to max; returning -Inf
+> 
+> print("task m")
+[1] "task m"
+procentowy_udzial <- prop.table(table(smartfony$ocena)) * 100
+pie(procentowy_udzial)
+#install.packages("plotrix")
+library(plotrix)
+fan.plot(procentowy_udzial, labels = names(procentowy_udzial))
+
+print("task n")
+smartfony$liczba_opini <- as.numeric(smartfony$liczba_opini)
+smartfony$status_opinii <- cut(smartfony$liczba_opini, breaks = c(-1, 1, 49, 100, Inf), labels = c("> procentowy_udzial <- prop.table(table(smartfony$ocena)) * 100
+pie(procentowy_udzial)
+#install.packages("plotrix")
+library(plotrix)
+fan.plot(procentowy_udzial, labels = names(procentowy_udzial))
+
+print("task n")
+smartfony$liczba_opini <- as.numeric(smartfony$liczba_opini)
+smartfony$status_opinii <- cut(smartfony$liczba_opini, breaks = c(-1, 1, 49, 100, Inf), labels = c("nie ma", "mniej 50 opinii", "50-100 opinii", "więc> pie(procentowy_udzial)
+Error in seq.int(x[i], x[i + 1], length.out = n) : 
+  'length.out' must be a non-negative number
+> #install.packages("plotrix")
+> library(plotrix)
+fan.plot(procentowy_udzial, labels = names(procentowy_udzial))
+
+print("task n")
+smartfony$liczba_opini <- as.numeric(smartfony$liczba_opini)
+smartfony$status_opinii <- cut(smartfony$liczba_opini, breaks = c(-1, 1, 49, 100, Inf), labels = c("nie ma", "mniej 50 opinii", "50-100 opinii", "więcej 100 opinii"))
+smartfony$status_opinii <- as.factor(smartfony$status_opinii)
+> fan.plot(procentowy_udzial, labels = names(procentowy_udzial))
+Error in plot.window(...) : need finite 'xlim' values
+In addition: Warning messages:
+1: In min(sin(align.at - x)) :
+  no non-missing arguments to min; returning Inf
+2: In max(nchar(labels)) : no non-missing arguments to max; returning -Inf
+> 
+> print("task n")
+[1] "task n"
+smartfony$liczba_opini <- as.numeric(smartfony$liczba_opini)
+smartfony$status_opinii <- cut(smartfony$liczba_opini, breaks = c(-1, 1, 49, 100, Inf), labels = c("nie ma", "mniej 50 opinii", "50-100 opinii", "więcej 100 opinii"))
+smartfony$status_opinii <- as.factor(smartfony$status_opinii)
+procentowy_udzial <- prop.table(table(smartfony$st> smartfony$liczba_opini <- as.numeric(smartfony$liczba_opini)
+smartfony$status_opinii <- cut(smartfony$liczba_opini, breaks = c(-1, 1, 49, 100, Inf), labels = c("nie ma", "mniej 50 opinii", "50-100 opinii", "więcej 100 opinii"))
+smartfony$status_opinii <- as.factor(smartfony$status_opinii)
+procentowy_udzial <- prop.table(table(smartfony$status_opinii)) * 100
+pie(procentowy_udzial)
+> smartfony$status_opinii <- cut(smartfony$liczba_opini, breaks = c(-1, 1, 49, 100, Inf), labels = c("nie ma", "mniej 50 opinii", "50-100 opinii", "więcej 100 opinii"))
+smartfony$status_opinii <- as.factor(smartfony$status_opinii)
+procentowy_udzial <- prop.table(table(smartfony$status_opinii)) * 100
+pie(procentowy_udzial)
+
+> smartfony$status_opinii <- as.factor(smartfony$status_opinii)
+procentowy_udzial <- prop.table(table(smartfony$status_opinii)) * 100
+pie(procentowy_udzial)
+
+print("task o")
+paste(smartfony$nazwa, " ma ocenę klientów ", smar> procentowy_udzial <- prop.table(table(smartfony$status_opinii)) * 100
+pie(procentowy_udzial)
+
+print("task o")
+paste(smartfony$nazwa, " ma ocenę klientów ", smartfony$ocena, " bo ma liczbę opinii ", smartfony$liczba_opini)
+> pie(procentowy_udzial)
+
+print("task o")
+paste(smartfony$nazwa, " ma ocenę klientów ", smartfony$ocena, " bo ma liczbę opinii ", smartfony$liczba_opini)
+
+print("task p")
+> 
+> print("task o")
+[1] "task o"
+paste(smartfony$nazwa, " ma ocenę klientów ", smartfony$ocena, " bo ma liczbę opinii ", smartfony$liczba_opini)
+
+print("task p")
+write.csv(smartfony, file = "smartfony.csv")
+> paste(smartfony$nazwa, " ma ocenę klientów ", smartfony$ocena, " bo ma liczbę opinii ", smartfony$liczba_opini)
+ [1] "SAMSUNG GALAXY A2 CORE  ma ocenę klientów    bo ma liczbę opinii  1"       
+ [2] "SAMSUNG GALAXY A6  ma ocenę klientów    bo ma liczbę opinii  39"           
+ [3] "SAMSUNG GALAXY A7 2018  ma ocenę klientów    bo ma liczbę opinii  80"      
+ [4] "SAMSUNG GALAXY A8S  ma ocenę klientów    bo ma liczbę opinii  0"           
+ [5] "SAMSUNG GALAXY A9  ma ocenę klientów    bo ma liczbę opinii  24"           
+ [6] "SAMSUNG GALAXY M10  ma ocenę klientów    bo ma liczbę opinii  0"           
+ [7] "SAMSUNG GALAXY WIDE 3  ma ocenę klientów    bo ma liczbę opinii  0"        
+ [8] "SAMSUNG GALAXY M20  ma ocenę klientów    bo ma liczbę opinii  3"           
+ [9] "SAMSUNG GALAXY NOTE 9  ma ocenę klientów    bo ma liczbę opinii  36"       
+[10] "SAMSUNG GALAXY ON6  ma ocenę klientów    bo ma liczbę opinii  0"           
+[11] "SAMSUNG GALAXY J6  ma ocenę klientów    bo ma liczbę opinii  32"           
+[12] "SAMSUNG GALAXY S LIGHT LUXURY  ma ocenę klientów    bo ma liczbę opinii  0"
+[13] "SAMSUNG GALAXY J7 REFINE  ma ocenę klientów    bo ma liczbę opinii  0"     
+[14] "SAMSUNG GALAXY J8  ma ocenę klientów    bo ma liczbę opinii  0"            
+
+print("task p")
+write.csv(smartfony, file = "smartfony.csv")
+rm(smartfony)
+> 
+> print("task p")
+[1] "task p"
+write.csv(smartfony, file = "smartfony.csv")
+rm(smartfony)
+smartfony
+> write.csv(smartfony, file = "smartfony.csv")
+> rm(smartfony)
+smartfony
+smartfony <- read.csv("smartfony.csv")
+> smartfony
+Error: object 'smartfony' not found
+> smartfony <- read.csv("smartfony.csv")
+smartfony
+> smartfony
+    X                         nazwa wyswietlacz pamiec_RAM pamiec_wbudowana
+1   1        SAMSUNG GALAXY A2 CORE        4.98          1                8
+2   2             SAMSUNG GALAXY A6        5.60          4               32
+3   3        SAMSUNG GALAXY A7 2018        6.00          4               64
+4   4            SAMSUNG GALAXY A8S        6.39          6              128
+5   5             SAMSUNG GALAXY A9        6.30          6              128
+6   6            SAMSUNG GALAXY M10        6.22          2               16
+7   7         SAMSUNG GALAXY WIDE 3        5.50          2               32
+8   8            SAMSUNG GALAXY M20        6.30          3               32
+9   9         SAMSUNG GALAXY NOTE 9        6.40          6              128
+10 10            SAMSUNG GALAXY ON6        5.60          3               32
+11 11             SAMSUNG GALAXY J6        5.60          3               32
+12 12 SAMSUNG GALAXY S LIGHT LUXURY        5.80          4               64
+13 13      SAMSUNG GALAXY J7 REFINE        5.50          2               32
+14 14             SAMSUNG GALAXY J8        6.00          4               64
+   aparat_foto cena liczba_opini   status_opinii
+1            5 2699            1          nie ma
+2           16 1999           39 mniej 50 opinii
+3           24 1899           80   50-100 opinii
+4           24  545            0          nie ma
+5           24 1899           24 mniej 50 opinii
+6           13 2699            0          nie ma
+7           13  929            0          nie ma
+8           13 1799            3 mniej 50 opinii
+9           12 4999           36 mniej 50 opinii
+10          13 2148            0          nie ma
+11          13 2148           32 mniej 50 opinii
+12          16 2120            0          nie ma
+13          13 1300            0          nie ma
+14          16 2148            0          nie ma
+> 
